@@ -7,8 +7,8 @@ Built with:
 
 ## Server
 
-Server code can be found [here](server/)
+Server code can be found [here](server/homegameauto/)
 
 ## Client
 
-Client code can be found [here](client/)
+Client code can be found [here](client/homegameauto/)
