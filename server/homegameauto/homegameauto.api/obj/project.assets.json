@@ -4746,6 +4746,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "homegameauto.models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v2.0/win": {
@@ -9543,6 +9553,16 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
+      },
+      "homegameauto.models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/homegameauto.models.dll": {}
         }
       }
     },
@@ -14596,6 +14616,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "homegameauto.models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v2.0/win-x86": {
@@ -19647,6 +19677,16 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
+      },
+      "homegameauto.models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/homegameauto.models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/homegameauto.models.dll": {}
         }
       }
     }
@@ -28515,12 +28555,18 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "homegameauto.models/1.0.0": {
+      "type": "project",
+      "path": "../homegameauto.models/homegameauto.models.csproj",
+      "msbuildProject": "../homegameauto.models/homegameauto.models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "homegameauto.models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -28530,11 +28576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto/homegameauto.csproj",
-      "projectName": "homegameauto",
-      "projectPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto/homegameauto.csproj",
+      "projectUniqueName": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/homegameauto.api.csproj",
+      "projectName": "homegameauto.api",
+      "projectPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/homegameauto.api.csproj",
       "packagesPath": "/Users/robertmayer/.nuget/packages/",
-      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto/obj",
+      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28550,7 +28596,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/homegameauto.models.csproj": {
+              "projectPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/homegameauto.models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

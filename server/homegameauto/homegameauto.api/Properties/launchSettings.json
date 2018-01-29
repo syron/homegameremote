@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "homegameauto": {
+    "homegameauto.api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homegameauto", "homegameauto\homegameauto.csproj", "{13DCF04C-7EE3-41C0-9DC8-BB3730BE136F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homegameauto.api", "homegameauto.api\homegameauto.api.csproj", "{4C175D7E-9995-4581-9F07-6AABB71816EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homegameauto.models", "homegameauto.models\homegameauto.models.csproj", "{45CF957F-8A89-43FC-AF98-B2CE085F8130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13DCF04C-7EE3-41C0-9DC8-BB3730BE136F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13DCF04C-7EE3-41C0-9DC8-BB3730BE136F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13DCF04C-7EE3-41C0-9DC8-BB3730BE136F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13DCF04C-7EE3-41C0-9DC8-BB3730BE136F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C175D7E-9995-4581-9F07-6AABB71816EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C175D7E-9995-4581-9F07-6AABB71816EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C175D7E-9995-4581-9F07-6AABB71816EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C175D7E-9995-4581-9F07-6AABB71816EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CF957F-8A89-43FC-AF98-B2CE085F8130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CF957F-8A89-43FC-AF98-B2CE085F8130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CF957F-8A89-43FC-AF98-B2CE085F8130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CF957F-8A89-43FC-AF98-B2CE085F8130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

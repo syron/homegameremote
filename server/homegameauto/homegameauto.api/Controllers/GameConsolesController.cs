@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using homegameauto.models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace homegameauto.Controllers
+namespace homegameauto.api.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class GameConsolesController : Controller
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<GameConsole> Get()
         {
-            return new string[] { "value1", "value2" };
+            return null;
         }
 
         // GET api/values/5
