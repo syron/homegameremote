@@ -17,7 +17,7 @@ dotnet run
 
 Navigate to url that is shown in your console.
 
-# API
+# Game Console API
 
 ## Get list of consoles
 
@@ -62,9 +62,11 @@ Gets a list of all configures gaming consoles.
 
 ## Get console by id
 
-Gets a specific user by its id.
+Gets a specific game console by its id.
 
-**URL** : `/api/gameconsoles/{id: Guid}`
+**URL** : `/api/gameconsoles/:id`
+
+**URL Parameters** : id=[Guid] where id is the ID of the game console on the server.
 
 **Method** : `GET`
 
@@ -85,4 +87,52 @@ Gets a specific user by its id.
     "description":"Kalle kula....",
     "ipAddress":"192.168.0.1"
 }
+```
+
+# Game API
+
+## Get list of Games
+
+Gets a list of all available games and/or filtered by console id.
+
+**URL** : `/api/games?consoleId=(:consoleId)`
+
+**URL Parameters** : consoleId=[Guid] where id is the ID of the game console on the server to filter the list with. **OPTIONAL**
+
+**Method** : `GET`
+
+**Auth required** : NO
+
+**Permissions required** : None
+
+### Success Response
+
+**Code** : `200 OK`
+
+**Content examples**
+
+```json
+coming soon...
+```
+
+## Get game by id
+
+Gets a game by its id.
+
+**URL** : `/api/games/{id: Guid}`
+
+**Method** : `GET`
+
+**Auth required** : NO
+
+**Permissions required** : None
+
+### Success Response
+
+**Code** : `200 OK`
+
+**Content examples**
+
+```json
+coming soon...
 ```
