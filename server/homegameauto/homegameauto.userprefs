@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{4C175D7E-9995-4581-9F07-6AABB71816EF}|Default">
   <MonoDevelop.Ide.ItemProperties.homegameauto.api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.repositories/GameConsoleRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.api/Controllers/GamesController.cs">
     <Files>
-      <File FileName="homegameauto.api/Controllers/GameConsolesController.cs" Line="25" Column="36" />
-      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="21" Column="48" />
-      <File FileName="homegameauto.api/Startup.cs" Line="19" Column="23" />
-      <File FileName="homegameauto.repositories/IGameConsoleRepository.cs" Line="15" Column="2" />
+      <File FileName="homegameauto.repositories/IGameRepository.cs" Line="11" Column="52" />
+      <File FileName="homegameauto.repositories/GameRepository.cs" Line="19" Column="10" />
+      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="19" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

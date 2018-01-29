@@ -11,25 +11,25 @@ namespace homegameauto.api.Controllers
     [Route("api/[controller]")]
     public class GameConsolesController : Controller
     {
-        private readonly IGameConsoleRepository _gameConsoleRepositories;
+        private readonly IGameConsoleRepository _gameConsoleRepository;
 
-        public GameConsolesController(IGameConsoleRepository gameConsoleRepositories)
+        public GameConsolesController(IGameConsoleRepository gameConsoleRepository)
         {
-            _gameConsoleRepositories = gameConsoleRepositories;
+            _gameConsoleRepository = gameConsoleRepository;
         }
 
         // GET api/values
         [HttpGet]
         public IEnumerable<GameConsole> Get()
         {
-            return _gameConsoleRepositories.GetAll();
+            return _gameConsoleRepository.GetAll();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public GameConsole Get(Guid id)
         {
-            return _gameConsoleRepositories.GetById(id);
+            return _gameConsoleRepository.GetById(id);
         }
 
         // POST api/values
