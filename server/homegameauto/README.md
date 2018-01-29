@@ -16,7 +16,7 @@ Gets a list of all configures gaming consoles.
 
 **Permissions required** : None
 
-##### Success Response
+#### Success Response
 
 **Code** : `200 OK`
 
@@ -43,4 +43,31 @@ Gets a list of all configures gaming consoles.
       "ipAddress":"192.168.0.3"
    }
 ]
+```
+
+### Get console by id
+
+Gets a specific user by its id.
+
+**URL** : `/api/gameconsoles/{id: Guid}`
+
+**Method** : `GET`
+
+**Auth required** : NO
+
+**Permissions required** : None
+
+#### Success Response
+
+**Code** : `200 OK`
+
+**Content examples**
+
+```json
+{
+    "id":"01bbd4d6-85a1-4a5b-8f11-29d5fb321143",
+    "name":"XBox",
+    "description":"Kalle kula....",
+    "ipAddress":"192.168.0.1"
+}
 ```
