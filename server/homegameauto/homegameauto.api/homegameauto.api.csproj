@@ -18,5 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\homegameauto.models\homegameauto.models.csproj" />
+    <ProjectReference Include="..\homegameauto.repositories\homegameauto.repositories.csproj" />
   </ItemGroup>
 </Project>

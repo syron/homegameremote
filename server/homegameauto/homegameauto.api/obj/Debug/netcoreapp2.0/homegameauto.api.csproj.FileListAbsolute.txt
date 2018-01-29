@@ -1,0 +1,15 @@
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.api.deps.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.api.runtimeconfig.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.api.runtimeconfig.dev.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.api.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.api.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.models.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.repositories.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.models.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/bin/Debug/netcoreapp2.0/homegameauto.repositories.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.csprojResolveAssemblyReference.cache
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.csproj.CoreCompileInputs.cache
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.AssemblyInfoInputs.cache
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.AssemblyInfo.cs
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/obj/Debug/netcoreapp2.0/homegameauto.api.pdb
