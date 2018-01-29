@@ -27,9 +27,9 @@ namespace homegameauto.api.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public GameConsole Get(Guid id)
         {
-            return "value";
+            return _gameConsoleRepositories.GetById(id);
         }
 
         // POST api/values
