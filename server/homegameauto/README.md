@@ -17,9 +17,9 @@ dotnet run
 
 Navigate to url that is shown in your console.
 
-## API
+# API
 
-### Get list of consoles
+## Get list of consoles
 
 Gets a list of all configures gaming consoles.
 
@@ -31,7 +31,7 @@ Gets a list of all configures gaming consoles.
 
 **Permissions required** : None
 
-#### Success Response
+### Success Response
 
 **Code** : `200 OK`
 
@@ -60,7 +60,7 @@ Gets a list of all configures gaming consoles.
 ]
 ```
 
-### Get console by id
+## Get console by id
 
 Gets a specific user by its id.
 
@@ -72,7 +72,7 @@ Gets a specific user by its id.
 
 **Permissions required** : None
 
-#### Success Response
+### Success Response
 
 **Code** : `200 OK`
 
