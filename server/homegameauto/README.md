@@ -1,6 +1,21 @@
-# Home Game Automation
+# Home Game Automation Server Application
 
 Server applications to start a console or emulator via mobile platform.
+
+## Description
+
+The server application is built with [ASP.Net Core](https://docs.microsoft.com/en-us/aspnet/core/).
+
+## How-To's
+
+### Run server app
+
+```bash
+cd homegameauto.api/
+dotnet run
+```
+
+Navigate to url that is shown in your console.
 
 ## API
 

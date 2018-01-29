@@ -203,13 +203,13 @@
       "projectName": "homegameauto.repositories",
       "projectPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/homegameauto.repositories.csproj",
       "packagesPath": "/Users/robertmayer/.nuget/packages/",
-      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/obj",
+      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/robertmayer/.config/NuGet/NuGet.Config"
+        "/Users/robertmayer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
