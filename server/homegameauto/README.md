@@ -112,7 +112,26 @@ Gets a list of all available games and/or filtered by console id.
 **Content examples**
 
 ```json
-coming soon...
+[
+    {
+        "id": "707bf088-5aa4-4626-964e-5ea918ce3a54",
+        "name": "Sonic",
+        "description": "Kalle Kula",
+        "consoleId": "01bbd4d6-85a1-4a5b-8f11-29d5fb321143"
+    },
+    {
+        "id": "61e34ec1-5157-4597-9637-d7cbdcdfe547",
+        "name": "Super Mario",
+        "description": "Kalle Kula",
+        "consoleId": "01bbd4d6-85a1-4a5b-8f11-29d5fb321143"
+    },
+    {
+        "id": "1afcae27-8240-4219-82f3-e41385417f7a",
+        "name": "Pokemon",
+        "description": "Kalle Kula",
+        "consoleId": "dc8ed7d5-344d-4d51-8b8a-4b8a10d94c3f"
+    }
+]
 ```
 
 ## Get game by id
@@ -134,5 +153,10 @@ Gets a game by its id.
 **Content examples**
 
 ```json
-coming soon...
+{
+    "id": "61e34ec1-5157-4597-9637-d7cbdcdfe547",
+    "name": "Super Mario",
+    "description": "Kalle Kula",
+    "consoleId": "01bbd4d6-85a1-4a5b-8f11-29d5fb321143"
+}
 ```

@@ -22,8 +22,11 @@ namespace homegameauto.api.Controllers
 
         // GET: api/values
         [HttpGet]
-        public IEnumerable<Game> Get()
+        public IEnumerable<Game> Get(Guid? consoleId = null)
         {
+            if (consoleId.HasValue)
+                return _gameRepository.GetByConsoleId(consoleId.Value);
+            
             return _gameRepository.GetAll();
         }
 

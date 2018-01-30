@@ -6,8 +6,8 @@ namespace homegameauto.repositories
 {
     public interface IGameRepository
     {
-        IList<Game> GetAll();
+        IEnumerable<Game> GetAll();
         Game GetById(Guid id);
-        IList<Game> GetByConsoleId(Guid consoleId);
+        IEnumerable<Game> GetByConsoleId(Guid consoleId);
     }
 }

@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.homegameauto.api PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.api/Controllers/GamesController.cs">
     <Files>
-      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="25" Column="39" />
+      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="25" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
