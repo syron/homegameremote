@@ -1,19 +1,20 @@
 <h1>Games</h1>
 
-<!-- <ul>
-  <li *ngFor="let game of games"><a (click)="openModal(template)">{{game.name}}</a></li>
-</ul> -->
-<carousel>
-  <slide *ngFor="let game of games">
-    <a (click)="openGameOptions(game, template)">
-      <img src="{{game.imageUrl}}" alt="{{ game.name }}" class="carouselImage">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>{{ game.name }}</h3>
-        <p>{{ game.description }}</p>
-      </div>
-    </a>
-  </slide>
-</carousel>
+<ngx-carousel [inputs]="carouselOne" (carouselLoad)="myfunc($event)">
+  <ngx-item NgxCarouselItem *ngFor="let game of games">
+    <div>
+      <a (click)="openGameOptions(game, template)">
+        <img src="{{game.imageUrl}}" alt="{{ game.name }}" class="carouselImage">
+        <div class="carouselContent">
+          <h3>{{ game.name }}</h3>
+          <p>{{ game.description }}</p>
+        </div>
+      </a>
+    </div>  
+  </ngx-item>
+  <button NgxCarouselPrev class='leftRs'>&lt;</button>
+  <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel>
 
 <ng-template #template>
   <div class="modal-header">

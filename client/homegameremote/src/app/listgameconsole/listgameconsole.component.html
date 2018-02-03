@@ -10,7 +10,7 @@
 </ul> -->
 
 
-<carousel>
+<!-- <carousel>
   <slide *ngFor="let console of gameConsoles">
     <a [routerLink]="['/games', console.id]">
       <img src="{{console.imageUrl}}" alt="{{ console.name }}" class="carouselImage">
@@ -20,4 +20,20 @@
       </div>
     </a>
   </slide>
-</carousel>
+</carousel> -->
+
+<ngx-carousel [inputs]="carouselOne" (carouselLoad)="myfunc($event)">
+    <ngx-item NgxCarouselItem *ngFor="let console of gameConsoles">
+      <div>
+        <a [routerLink]="['/games', console.id]">
+          <img src="{{console.imageUrl}}" alt="{{ console.name }}" class="carouselImage">
+          <div class="carouselContent">
+            <h3>{{ console.name }}</h3>
+            <p>{{ console.description }}</p>
+          </div>
+        </a>
+      </div>  
+    </ngx-item>
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+  </ngx-carousel>

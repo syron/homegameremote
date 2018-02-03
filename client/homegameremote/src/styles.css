@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.carouselImage {
+    display: block;
+    margin: 0 auto;
+    height: calc(100vh - 140px);
+}
+
+.carouselContent {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
+
+.leftRs, .rightRs {
+    display: none !important;
+}
