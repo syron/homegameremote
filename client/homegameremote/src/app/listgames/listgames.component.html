@@ -1,5 +1,30 @@
 <h1>Games</h1>
 
-<ul>
-  <li *ngFor="let game of games">{{ game.name }}</li>
-</ul>
+<!-- <ul>
+  <li *ngFor="let game of games"><a (click)="openModal(template)">{{game.name}}</a></li>
+</ul> -->
+<carousel>
+  <slide *ngFor="let game of games">
+    <a (click)="openGameOptions(game, template)">
+      <img src="{{game.imageUrl}}" alt="{{ game.name }}" class="carouselImage">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ game.name }}</h3>
+        <p>{{ game.description }}</p>
+      </div>
+    </a>
+  </slide>
+</carousel>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{selectedGame.name}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{selectedGame.description}}
+    <hr />
+    <a class="btn btn-primary">Start Game</a>
+  </div>
+</ng-template>

@@ -1,0 +1,13 @@
+a {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.carouselImage {
+    display: block;
+    margin: 0 auto;
+    height: calc(100vh - 69px);
+}

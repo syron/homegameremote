@@ -3,4 +3,5 @@ export class Game {
     public name: string;
     public description: string;
     public consoleId: string;
+    public imageUrl: string;
 }

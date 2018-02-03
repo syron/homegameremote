@@ -8,7 +8,9 @@ import { HomeGameAutoGameApiService, HomeGameAutoGameConsoleApiService } from '.
 import { ListgameconsoleComponent } from './listgameconsole/listgameconsole.component';
 import { ListgamesComponent } from './listgames/listgames.component';
 
-import { CarouselModule } from 'ngx-bootstrap';
+import { CarouselModule, ModalModule } from 'ngx-bootstrap';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 const appRoutes: Routes = [
   { path: 'home', component: ListgameconsoleComponent },
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,    
     RouterModule.forRoot(appRoutes, {enableTracing: false}),
+    NgxCarouselModule,
     CarouselModule.forRoot(),
+    ModalModule.forRoot(),
     HttpClientModule
   ],
   providers: [HomeGameAutoGameApiService, HomeGameAutoGameConsoleApiService],
