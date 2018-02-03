@@ -1,3 +1,23 @@
-<p>
-  listgameconsole works!
-</p>
+<h1>Game Consoles</h1>
+
+<!-- <ul>
+  <li *ngFor="let console of gameConsoles">
+    
+      <img src="{{console.imageUrl}}" />
+      {{ console.name }}
+    </a>
+  </li>
+</ul> -->
+
+
+<carousel>
+  <slide *ngFor="let console of gameConsoles">
+    <a [routerLink]="['/games', console.id]">
+      <img src="{{console.imageUrl}}" alt="{{ console.name }}" class="carouselImage">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ console.name }}</h3>
+        <p>{{ console.description }}</p>
+      </div>
+    </a>
+  </slide>
+</carousel>

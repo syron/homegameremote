@@ -10,8 +10,5 @@ export class AppComponent {
   title = 'app';
 
   constructor(private gameApi: HomeGameAutoGameApiService) {
-    this.gameApi.getAll().subscribe(data => {
-      console.log(data);
-    });
   }
 }

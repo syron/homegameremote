@@ -6,25 +6,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeGameAutoGameApiService, HomeGameAutoGameConsoleApiService } from './services';
 import { ListgameconsoleComponent } from './listgameconsole/listgameconsole.component';
+import { ListgamesComponent } from './listgames/listgames.component';
+
+import { CarouselModule } from 'ngx-bootstrap';
 
 const appRoutes: Routes = [
   { path: 'home', component: ListgameconsoleComponent },
+  { path: 'games/:consoleId', component: ListgamesComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   }
-  //,
-  //{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListgameconsoleComponent
+    ListgameconsoleComponent,
+    ListgamesComponent
   ],
   imports: [
     BrowserModule,    
     RouterModule.forRoot(appRoutes, {enableTracing: false}),
+    CarouselModule.forRoot(),
     HttpClientModule
   ],
   providers: [HomeGameAutoGameApiService, HomeGameAutoGameConsoleApiService],

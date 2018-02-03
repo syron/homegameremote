@@ -16,6 +16,7 @@ export class HomeGameAutoGameApiService {
   }
 
   public getByConsoleId(consoleId: string): Observable<Array<Game>> {
+    let url: string = this.baseAddress + "games?consoleId=" + consoleId;
     return this.http.get<Array<Game>>(this.baseAddress + "games?consoleId=" + consoleId);
   }
 

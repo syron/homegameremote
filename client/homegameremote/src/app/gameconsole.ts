@@ -3,4 +3,5 @@ export class GameConsole {
     public name: string;
     public description: string;
     public ipAddress: string;
+    public imageUrl: string;
 }
