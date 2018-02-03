@@ -7,5 +7,6 @@ namespace homegameauto.models
         public string Name { get; set; }
         public string Description { get; set; }
         public Guid ConsoleId { get; set; }
+        public Uri ImageUrl { get; set; }
     }
 }

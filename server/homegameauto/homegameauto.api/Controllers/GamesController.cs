@@ -30,6 +30,12 @@ namespace homegameauto.api.Controllers
             return _gameRepository.GetAll();
         }
 
+        // POST: api/games/{id}/start
+        [HttpGet("{id}/start")]
+        public bool Start() {
+            return false;
+        }
+
         // GET api/values/5
         [HttpGet("{id}")]
         public Game Get(Guid id)

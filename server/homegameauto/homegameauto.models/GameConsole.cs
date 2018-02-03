@@ -8,5 +8,6 @@ namespace homegameauto.models
         public string Name { get; set; }
         public string Description { get; set; }
         public string IPAddress { get; set; }
+        public Uri ImageUrl { get; set; }
     }
 }

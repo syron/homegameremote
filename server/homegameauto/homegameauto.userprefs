@@ -1,10 +1,28 @@
 ﻿<Properties StartupConfiguration="{4C175D7E-9995-4581-9F07-6AABB71816EF}|Default">
   <MonoDevelop.Ide.ItemProperties.homegameauto.api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.api/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.repositories/GameRepository.cs">
     <Files>
-      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="59" Column="1" />
-      <File FileName="homegameauto.api/Startup.cs" Line="45" Column="16" />
+      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="24" Column="18" />
+      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="27" Column="9" />
+      <File FileName="homegameauto.repositories/GameRepository.cs" Line="37" Column="37" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="homegameauto" expanded="True">
+            <Node name="homegameauto.tests" expanded="True">
+              <Node name="homegameauto" expanded="True">
+                <Node name="tests" expanded="True">
+                  <Node name="UnitTest1" expanded="True">
+                    <Node name="TestMethod1" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
