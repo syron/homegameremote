@@ -16,7 +16,7 @@ export class HomeGameAutoGameConsoleApiService {
   }
 
   public getById(id: string): Observable<GameConsole> {
-    return this.http.get<GameConsole>(this.baseAddress + "/gameconsoles/" + id);
+    return this.http.get<GameConsole>(this.baseAddress + "gameconsoles/" + id);
   }
 
 }

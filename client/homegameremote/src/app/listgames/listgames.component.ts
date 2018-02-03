@@ -4,12 +4,13 @@ import { Router } from '@angular/router';
 import { ParamMap } from '@angular/router/src/shared';
 import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/Observable';
-import { Game } from '../models';
+import { Game, GameConsole } from '../models';
 import { HomeGameAutoGameApiService } from '../home-game-auto-game-api.service';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { NgxCarousel } from 'ngx-carousel';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { HomeGameAutoGameConsoleApiService } from '../home-game-auto-game-console-api.service';
 
 @Component({
   selector: 'app-listgames',
@@ -22,6 +23,8 @@ export class ListgamesComponent implements OnInit {
 
   games$: Observable<Array<Game>>;
   games: Array<Game>;
+  gameConsole: GameConsole
+
   selectedGame: Game;
 
   modalRef: BsModalRef;
@@ -30,9 +33,15 @@ export class ListgamesComponent implements OnInit {
   constructor(private route: ActivatedRoute
             , public router: Router
             , private gameApi: HomeGameAutoGameApiService
+            , private gameConsoleApi: HomeGameAutoGameConsoleApiService
             , private modalService: BsModalService) {
     this.games$ = this.route.paramMap.switchMap((params: ParamMap) => {
       this.selectedGameConsoleId = params.get('consoleId');
+
+      this.gameConsoleApi.getById(this.selectedGameConsoleId).subscribe(data => {
+        this.gameConsole = data;
+      });
+
       return this.gameApi.getByConsoleId(this.selectedGameConsoleId);
     });
 
