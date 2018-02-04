@@ -28,3 +28,11 @@
 .popover {
     color: #000;
 }
+
+.text-red {
+    color: #FF0000;
+}
+
+.text-green {
+    color: #00FF00;
+}

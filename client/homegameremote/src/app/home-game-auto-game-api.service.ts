@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { Game } from './game';
+import { Game, StartGameStatus } from './models';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
@@ -21,7 +21,10 @@ export class HomeGameAutoGameApiService {
   }
 
   public getById(id: string): Observable<Game> {
-    return this.http.get<Game>(this.baseAddress + "/games/" + id);
+    return this.http.get<Game>(this.baseAddress + "games/" + id);
   }
 
+  public start(id: string): Observable<StartGameStatus> {
+    return this.http.get<StartGameStatus>(this.baseAddress + "games/" + id + "/start");
+  }
 }

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ParamMap } from '@angular/router/src/shared';
 import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/Observable';
-import { Game, GameConsole } from '../models';
+import { Game, GameConsole, StartGameStatus } from '../models';
 import { HomeGameAutoGameApiService } from '../home-game-auto-game-api.service';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
@@ -26,6 +26,7 @@ export class ListgamesComponent implements OnInit {
   gameConsole: GameConsole
 
   selectedGame: Game;
+  startGameStatus: StartGameStatus = null;
 
   modalRef: BsModalRef;
   public carouselOne: NgxCarousel;
@@ -75,5 +76,17 @@ export class ListgamesComponent implements OnInit {
       return this.games.length;
     else
       0;
+  }
+
+  startGame(game: Game) {
+    this.gameApi.start(game.id).subscribe(data => {
+      this.startGameStatus = data;
+    });
+  }
+
+  onCloseStartGameModal() {
+    this.modalRef.hide();
+    this.startGameStatus = null;
+    this.selectedGame = null;
   }
 }
