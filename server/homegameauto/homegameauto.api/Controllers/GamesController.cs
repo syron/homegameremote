@@ -15,10 +15,12 @@ namespace homegameauto.api.Controllers
     public class GamesController : Controller
     {
         private readonly IGameRepository _gameRepository;
+        private readonly IGameConsoleRepository _gameConsoleRepository;
 
-        public GamesController(IGameRepository gameRepository) 
+        public GamesController(IGameRepository gameRepository, IGameConsoleRepository gameConsoleRepository) 
         {
             _gameRepository = gameRepository;
+            _gameConsoleRepository = gameConsoleRepository;
         }
 
         // GET: api/values
@@ -33,7 +35,17 @@ namespace homegameauto.api.Controllers
 
         // POST: api/games/{id}/start
         [HttpGet("{id}/start")]
-        public StartGameStatus Start() {
+        public StartGameStatus Start(Guid id) {
+            // command
+            // 1. Get Game by Id
+            // 2. get ip address of gameconsole
+
+            var game = _gameRepository.GetById(id);
+            var gameConsole = _gameConsoleRepository.GetById(game.ConsoleId);
+
+            var command = string.Format("triforcetools.py {0} {1}", gameConsole.IPAddress, game.Name);
+
+
             StartGameStatus status = new StartGameStatus();
 
             Random rand = new Random();
