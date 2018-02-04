@@ -1,27 +1,32 @@
-# Homegameremote
+# Homegameauto Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
+## Prerequisites
 
-## Development server
+* [NodeJS](https://nodejs.org/)
+* [AngularCLI](https://cli.angular.io/)
+* [Homegameauto API](https://github.com/syron/homegameremote/tree/master/server/homegameauto)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Configuration
 
-## Code scaffolding
+In src/environments/ you can find different environments files for the different environments.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Change the environment settings according to your specifications
+
+```json
+export const environment = {
+  production: true,
+  apiEndpoint: ""
+};
+```
+
+The `apiEndpoint` needs to point to the actual web address of your deployed [Homegameauto API](https://github.com/syron/homegameremote/tree/master/server/homegameauto).
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+> All commands below need to be run in the same folder in which the .angular-cli.json file is.
 
-## Running unit tests
+Make sure, before building that you have installed all npm packages defined in the package.json, by running `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run the app in debug, simply run `ng serve`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To actually build a production build run `ng build --prod`
