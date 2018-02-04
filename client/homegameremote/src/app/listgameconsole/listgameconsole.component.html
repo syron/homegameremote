@@ -13,7 +13,7 @@
             <a [routerLink]="['/games', console.id]">
               <img src="{{console.imageUrl}}" alt="{{ console.name }}" class="carouselImage">
               <div class="carouselContent">
-                <h3>{{ console.name }}</h3>
+                <h3 triggers="mouseenter:mouseleave" popover="IP Address: {{console.ipAddress}}">{{ console.name }}</h3>
                 <p>{{ console.description }}</p>
               </div>
             </a>

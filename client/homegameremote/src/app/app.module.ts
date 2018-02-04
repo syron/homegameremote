@@ -8,7 +8,7 @@ import { HomeGameAutoGameApiService, HomeGameAutoGameConsoleApiService } from '.
 import { ListgameconsoleComponent } from './listgameconsole/listgameconsole.component';
 import { ListgamesComponent } from './listgames/listgames.component';
 
-import { CarouselModule, ModalModule } from 'ngx-bootstrap';
+import { CarouselModule, ModalModule, PopoverModule } from 'ngx-bootstrap';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 
@@ -32,6 +32,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {enableTracing: false}),
     NgxCarouselModule,
     CarouselModule.forRoot(),
+    PopoverModule.forRoot(),
     ModalModule.forRoot(),
     HttpClientModule
   ],
