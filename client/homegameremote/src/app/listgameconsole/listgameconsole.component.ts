@@ -36,14 +36,11 @@ export class ListgameconsoleComponent implements OnInit {
     }
   }
 
-  public myfunc(event: Event) {
-    // carouselLoad will trigger this funnction when your load value reaches
-    // it is helps to load the data by parts to increase the performance of the app
-    // must use feature to all carousel
-  }
-
   get numberOfGameConsoles(): number {
-    return this.gameConsoles.length;
+    if (this.gameConsoles != null)
+      return this.gameConsoles.length;
+    else
+      return 0;
   }
 
 }

@@ -71,6 +71,9 @@ export class ListgamesComponent implements OnInit {
   }
 
   get numberOfGames(): number {
-    return this.games.length;
+    if (this.games != null)
+      return this.games.length;
+    else
+      0;
   }
 }
