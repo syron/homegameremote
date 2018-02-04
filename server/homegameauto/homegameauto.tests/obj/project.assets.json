@@ -5152,6 +5152,7 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0",
           "homegameauto.models": "1.0.0",
           "homegameauto.repositories": "1.0.0"
         },
@@ -13563,13 +13564,13 @@
       "projectName": "homegameauto.tests",
       "projectPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/homegameauto.tests.csproj",
       "packagesPath": "/Users/robertmayer/.nuget/packages/",
-      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/obj",
+      "outputPath": "/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/robertmayer/.config/NuGet/NuGet.Config"
+        "/Users/robertmayer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

@@ -1,0 +1,5 @@
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api
+--output-path=obj/Release/netcoreapp2.0/
+--application-name=homegameauto.api
+--content-root=/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api
+--file=

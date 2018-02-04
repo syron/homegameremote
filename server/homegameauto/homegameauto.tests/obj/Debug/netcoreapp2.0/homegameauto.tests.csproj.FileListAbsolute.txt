@@ -18,3 +18,6 @@
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/obj/Debug/netcoreapp2.0/homegameauto.tests.pdb
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/bin/Debug/netcoreapp2.0/homegameauto.api.dll
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/bin/Debug/netcoreapp2.0/homegameauto.api.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/bin/Debug/netcoreapp2.0/DataFiles/gameconsoles.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/bin/Debug/netcoreapp2.0/DataFiles/games.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.tests/bin/Debug/netcoreapp2.0/README.txt

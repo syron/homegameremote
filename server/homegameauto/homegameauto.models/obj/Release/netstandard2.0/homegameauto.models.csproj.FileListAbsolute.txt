@@ -1,0 +1,8 @@
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/bin/Release/netstandard2.0/homegameauto.models.deps.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/bin/Release/netstandard2.0/homegameauto.models.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/bin/Release/netstandard2.0/homegameauto.models.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/obj/Release/netstandard2.0/homegameauto.models.csproj.CoreCompileInputs.cache
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/obj/Release/netstandard2.0/homegameauto.models.AssemblyInfoInputs.cache
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/obj/Release/netstandard2.0/homegameauto.models.AssemblyInfo.cs
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/obj/Release/netstandard2.0/homegameauto.models.dll
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.models/obj/Release/netstandard2.0/homegameauto.models.pdb

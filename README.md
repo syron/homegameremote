@@ -2,8 +2,8 @@
 
 Built with:
 
-* ASP.NET Core 2
-* Ionic
+* ASP.NET Core version 2
+* Angular
 
 ## Server
 
@@ -11,4 +11,4 @@ Server code can be found [here](server/homegameauto/)
 
 ## Client
 
-Client code can be found [here](client/homegameauto/)
+Client code can be found [here](client/homegameremote/)
