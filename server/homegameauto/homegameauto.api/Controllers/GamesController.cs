@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using homegameauto.api.Models;
 using homegameauto.models;
 using homegameauto.repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -32,8 +33,20 @@ namespace homegameauto.api.Controllers
 
         // POST: api/games/{id}/start
         [HttpGet("{id}/start")]
-        public bool Start() {
-            return false;
+        public StartGameStatus Start() {
+            StartGameStatus status = new StartGameStatus();
+
+            Random rand = new Random();
+            if (rand.Next(0, 2) == 0)
+            {
+                status.Status = false;
+                status.Message = "Game did not start... Do not know why, but I guess it's your fault!";
+                return status;
+            }
+            status.Status = true;
+            status.Message = "Game started...";
+
+            return status;
         }
 
         // GET api/values/5

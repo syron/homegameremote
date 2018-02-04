@@ -9,3 +9,5 @@
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/obj/Debug/netstandard2.0/homegameauto.repositories.AssemblyInfo.cs
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/obj/Debug/netstandard2.0/homegameauto.repositories.dll
 /Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/obj/Debug/netstandard2.0/homegameauto.repositories.pdb
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/bin/Debug/netstandard2.0/DataFiles/gameconsoles.json
+/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.repositories/bin/Debug/netstandard2.0/DataFiles/games.json

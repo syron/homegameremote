@@ -7,4 +7,18 @@
   <ItemGroup>
     <ProjectReference Include="..\homegameauto.models\homegameauto.models.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DataFiles\gameconsoles.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataFiles\games.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
 </Project>

@@ -1,10 +1,17 @@
 ﻿<Properties StartupConfiguration="{4C175D7E-9995-4581-9F07-6AABB71816EF}|Default">
   <MonoDevelop.Ide.ItemProperties.homegameauto.api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.repositories/GameRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.repositories/GameConsoleRepository.cs">
     <Files>
-      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="24" Column="18" />
-      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="27" Column="9" />
-      <File FileName="homegameauto.repositories/GameRepository.cs" Line="37" Column="37" />
+      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="23" Column="9" />
+      <File FileName="homegameauto.api/Models/StartGameStatus.cs" Line="5" Column="33" />
+      <File FileName="homegameauto.api/Startup.cs" Line="27" Column="31" />
+      <File FileName="homegameauto.models/GameConsole.cs" Line="11" Column="42" />
+      <File FileName="homegameauto.repositories/DataFiles/games.json" Line="22" Column="4" />
+      <File FileName="homegameauto.repositories/GameRepository.cs" Line="22" Column="14" />
+      <File FileName="homegameauto.api/appsettings.Development.json" Line="5" Column="4" />
+      <File FileName="homegameauto.api/appsettings.json" Line="3" Column="24" />
+      <File FileName="homegameauto.api/README.txt" Line="4" Column="60" />
+      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="32" Column="10" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">

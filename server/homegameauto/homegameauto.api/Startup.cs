@@ -26,8 +26,11 @@ namespace homegameauto.api
         {
             services.AddMvc();
 
-            services.AddScoped<IGameConsoleRepository, GameConsoleRepository>();
-            services.AddScoped<IGameRepository, GameRepository>();
+            string gameConsolesFolder = Configuration["GameSettings:GameConsolesFolder"];
+            string gamesFolder = Configuration["GameSettings:GamesFolder"];
+
+            services.AddScoped<IGameConsoleRepository>(gcr => new GameConsoleRepository(gameConsolesFolder));
+            services.AddScoped<IGameRepository>(gr => new GameRepository(gamesFolder));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
