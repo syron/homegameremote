@@ -17,6 +17,16 @@ dotnet run
 
 Navigate to url that is shown in your console.
 
+### Publish the app
+
+```bash
+cd homegameauto.api/
+dotnet publish --configuration Release
+```
+
+The command above will automatically create a publish folder in your folder under `bin/Release/netcoreapp2.0/publish/`.
+Copy that folder into your target location and have fun.
+
 # Game Console API
 
 ## Get list of consoles
