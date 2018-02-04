@@ -49,11 +49,6 @@ export class ListgamesComponent implements OnInit {
       this.games = data;
     });
   }
- 
-  openGameOptions(game: Game, template: TemplateRef<any>) {
-    this.selectedGame = game;
-    this.modalRef = this.modalService.show(template);
-  }
 
   ngOnInit() {
     this.carouselOne = {
@@ -69,11 +64,13 @@ export class ListgamesComponent implements OnInit {
       custom: 'banner'
     }
   }
-
-  public myfunc(event: Event) {
-    // carouselLoad will trigger this funnction when your load value reaches
-    // it is helps to load the data by parts to increase the performance of the app
-    // must use feature to all carousel
+ 
+  openGameOptions(game: Game, template: TemplateRef<any>) {
+    this.selectedGame = game;
+    this.modalRef = this.modalService.show(template);
   }
 
+  get numberOfGames(): number {
+    return this.games.length;
+  }
 }

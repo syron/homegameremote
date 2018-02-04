@@ -20,3 +20,7 @@
 .leftRs, .rightRs {
     display: none !important;
 }
+
+.go-back {
+    padding: 20px 0 0 20px;
+}

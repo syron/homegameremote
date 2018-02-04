@@ -42,4 +42,8 @@ export class ListgameconsoleComponent implements OnInit {
     // must use feature to all carousel
   }
 
+  get numberOfGameConsoles(): number {
+    return this.gameConsoles.length;
+  }
+
 }

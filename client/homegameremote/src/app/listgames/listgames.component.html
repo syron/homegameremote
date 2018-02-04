@@ -1,8 +1,6 @@
-
-
 <div class="row">
-  <div class="col-md-3" style="vertical-align: middle;"><a [routerLink]="['/home']">Back to game consoles</a></div>
-  <div class="col-md-6"><h3>Games for {{gameConsole.name}}</h3></div>
+  <div class="col-md-3 go-back" style="vertical-align: middle;"><a [routerLink]="['/home']"><i class="fa fa-arrow-circle-left"></i> Back to game consoles</a></div>
+  <div class="col-md-6"><h3 *ngIf="gameConsole != null">Games for {{gameConsole.name}} <span class="badge badge-primary">{{numberOfGames}} available</span></h3></div>
   <div class="col-md-4"></div>
 </div>
 
