@@ -34,20 +34,25 @@ namespace homegameauto.api.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]GameConsole game)
         {
+            game.Id = Guid.NewGuid();
+            _gameConsoleRepository.Insert(game);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(Guid id, [FromBody]GameConsole game)
         {
+            game.Id = id;
+            _gameConsoleRepository.Update(game);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            _gameConsoleRepository.Delete(id);
         }
     }
 }
