@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using homegameauto.api.Models;
@@ -36,28 +37,33 @@ namespace homegameauto.api.Controllers
         // POST: api/games/{id}/start
         [HttpGet("{id}/start")]
         public StartGameStatus Start(Guid id) {
-            // command
-            // 1. Get Game by Id
-            // 2. get ip address of gameconsole
-
             var game = _gameRepository.GetById(id);
             var gameConsole = _gameConsoleRepository.GetById(game.ConsoleId);
 
-            var command = string.Format("triforcetools.py {0} {1}", gameConsole.IPAddress, game.Name);
-
+            var command = game.Executable;
 
             StartGameStatus status = new StartGameStatus();
 
-            Random rand = new Random();
-            if (rand.Next(0, 2) == 0)
-            {
-                status.Status = false;
-                status.Message = "Game did not start... Do not know why, but I guess it's your fault!";
-                return status;
-            }
-            status.Status = true;
-            status.Message = "Game started...";
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.CreateNoWindow = false;
+            startInfo.UseShellExecute = false;
+            startInfo.FileName = command;
 
+            try
+            {
+                using (Process exeProcess = Process.Start(startInfo))
+                {
+                    exeProcess.WaitForExit();
+                    status.Status = true;
+                    status.Message = "Game started :)";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log error.
+                status.Status = false;
+                status.Message = ex.ToString();
+            }
             return status;
         }
 

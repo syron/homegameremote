@@ -1,43 +1,24 @@
 ﻿<Properties StartupConfiguration="{4C175D7E-9995-4581-9F07-6AABB71816EF}|Default">
   <MonoDevelop.Ide.ItemProperties.homegameauto.api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.repositories/GameConsoleRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="homegameauto.api/Controllers/GamesController.cs">
     <Files>
-      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="86" Column="10" />
-      <File FileName="homegameauto.api/Models/StartGameStatus.cs" Line="5" Column="33" />
-      <File FileName="homegameauto.api/Startup.cs" Line="41" Column="49" />
+      <File FileName="homegameauto.api/Controllers/GamesController.cs" Line="52" Column="16" />
+      <File FileName="homegameauto.api/Startup.cs" Line="31" Column="13" />
       <File FileName="homegameauto.models/GameConsole.cs" Line="11" Column="42" />
-      <File FileName="homegameauto.repositories/DataFiles/games.json" Line="22" Column="4" />
       <File FileName="homegameauto.repositories/GameRepository.cs" Line="22" Column="14" />
       <File FileName="homegameauto.api/appsettings.Development.json" Line="5" Column="4" />
-      <File FileName="homegameauto.api/appsettings.json" Line="3" Column="24" />
+      <File FileName="homegameauto.api/appsettings.json" Line="8" Column="15" />
       <File FileName="homegameauto.api/README.txt" Line="5" Column="15" />
-      <File FileName="homegameauto.api/Controllers/GameConsolesController.cs" Line="55" Column="39" />
+      <File FileName="homegameauto.api/Controllers/GameConsolesController.cs" Line="47" Column="25" />
       <File FileName="homegameauto.repositories/DataFiles/gameconsoles.json" Line="18" Column="23" />
-      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="29" Column="29" />
+      <File FileName="homegameauto.repositories/GameConsoleRepository.cs" Line="26" Column="10" />
+      <File FileName="homegameauto.models/Game.cs" Line="10" Column="42" />
+      <File FileName="homegameauto.api/Models/StartGameStatus.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="homegameauto" expanded="True">
-            <Node name="homegameauto.tests" expanded="True">
-              <Node name="homegameauto" expanded="True">
-                <Node name="tests" expanded="True">
-                  <Node name="UnitTest1" expanded="True">
-                    <Node name="TestMethod1" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/robertmayer/Desktop/GIT/homegameremote/server/homegameauto/homegameauto.api/Controllers/GameConsolesController.cs" relfile="homegameauto.api/Controllers/GameConsolesController.cs" line="47" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
